@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"uart-rs232\stm32f1xx_hal_flash_ex.o"
+"uart-rs232\stm32f1xx_hal_rcc_ex.o"
+"uart-rs232\stm32f1xx_hal_tim.o"
+"uart-rs232\stm32f1xx_hal.o"
+"uart-rs232\stm32f1xx_hal_uart.o"
+"uart-rs232\stm32f1xx_hal_flash.o"
+"uart-rs232\stm32f1xx_hal_pwr.o"
+"uart-rs232\stm32f1xx_hal_dma.o"
+"uart-rs232\stm32f1xx_hal_gpio.o"
+"uart-rs232\stm32f1xx_hal_tim_ex.o"
+"uart-rs232\stm32f1xx_hal_rcc.o"
+"uart-rs232\stm32f1xx_hal_cortex.o"
+"uart-rs232\stm32f1xx_hal_i2c.o"
+"uart-rs232\system_stm32f1xx.o"
+"uart-rs232\stm32f1xx_hal_msp.o"
+"uart-rs232\stm32f1xx_it.o"
+"uart-rs232\main.o"
+"uart-rs232\startup_stm32f103xb.o"
+--library_type=microlib --strict --scatter "uart-rs232\uart-rs232.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "uart-rs232.map" -o uart-rs232\uart-rs232.axf
